@@ -194,7 +194,7 @@ hr.small {
 
 .callout {
     display: table;
-    width: 100%;
+    width: 75%;
     height: 400px;
     color: #fff;
     background: url(../img/blackboard2.jpg) no-repeat center center scroll;
