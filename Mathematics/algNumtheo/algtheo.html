@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Algebraic Number Theory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+          <ul class="list-unstyled">
+            <li>Bootstrap 4.0.0-beta</li>
+            <li>jQuery 3.2.1</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p>
+        It seems that almost every inquiry into an area of number theory begins
+        with the fact that an integer can be uniquely factored into powers of primes, upto
+        the order of the primes. In more general settings, one defines an element
+        to be prime if $p \mid ab$ implies that $p \mid a$ or $p \mid b$. Consider
+        the ring of Gaussian integers:
+        \[
+            \mathbb{Z}[i] = \left\{a + bi \mid a,b \in \mathbb{Z} \right\}.
+        \]
+        What are the prime elements in this ring? A natural enough question that
+        one can answer by working through the properties of the <em> norm </em>
+        endowed on the ring $N(z) = z \cdot \bar{z}$, where $\bar{z}$ is the complex
+        conjugate of $z$.
+    </p>
+
+    <p>
+        Consider the following diagram of ring / field extensions:
+        $\require{AMScd}$
+        \[
+            \begin{CD}
+                \langle 1-i \rangle >> \mathcal{O}_K=\mathbb{Z}[i] >> K = \mathbb{Q}(i); \\
+                @^^^@^^^@^^^ \\
+                \langle 2 \rangle >> \mathbb{Z} >> \mathbb{Q};
+            \end{CD}
+        \]
+        Note that $2$ lies in the ideal $\langle 1-i \rangle$ because $(1+i)(1-i) = 2$. One
+        says that $2$ is a <em> split </em> prime, in the extension, sense it factors.
+        It turns out that there can only be finitely many such primes. One can then
+        ask: does unique factorization hold in every number field $\mathcal{O}_K$?
+    </p>
+
+    <p>
+        The answer turns out to be no. Not every number field is a unique factorization
+        domain(UFD). However, they are <em> Dedekind domains </em>. These rings have
+        suitably nice properties to recover a version of unique factorization. One looks
+        at prime ideals instead of prime elements.
+    </p>
+
+    <p>
+        <b> Theorem: </b> Every ideal, in a Dedekind domain, uniquely factors
+        into a product of prime ideals, up to reordering of the factors.
+    </p>
+
+    <p>
+        This is but the beginning of a very interesting story. In some ways,
+        the "algebraic", in algebraic number theory, is a little bit of a misnomer.
+        There are analytic notions that come into play, while proving certain theorems
+        or trying to understand the structure of a number field. Two examples are the
+        Dedekind Unit theorem and Dedekind Zeta functions. The Dedekind Unit theorem
+        requires analysis, in its proof, but is ultimately a statement about the
+        units in a number ring.
+    </p>
+
+    <p>
+        There are a whole slew of ideas, some of which are pretty deep, that
+        lead off into the realm of Class Field Theory. The <em> class number </em>
+        tells one how far a number field is from being a PID, at least in some
+        sense. The class number formula relates values of the Dedekind zeta
+        function to invariants such as the <em> regulator </em> the <em> discriminant </em>,
+        the number of the roots of unity in the number field, and the real and complex
+        embeddings.
+    </p>
+
+    <p>
+        <b> References: </b>
+        <ol>
+            <li> Marcus, Daniel, <em> Number Fields </em>, Universitext, Springer, 1977. </li>
+            <li> Frohlich, A., Taylor, M.J., <em> Algebraic Number Theory </em>, Cambridge studies
+                in Advanced Mathematics, Cambridge University Press, 1994 </li>
+            <li> Ireland, Kenneth, Rosen, Michael, <em> A Classical Introduction to Modern Number Theory </em>,
+                Second Edition, Graduate Texts in Mathematics, Springer, 1990. </li>
+            <li> Samuel, Pierre, <em> Algebraic Theory of Numbers </em>, Dover reprint, 1990.</li>
+        </ol>
+    </p>
+
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

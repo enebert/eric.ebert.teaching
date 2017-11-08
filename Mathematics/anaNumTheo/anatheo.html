@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Analytic Number Theory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Analytic Number Theory</h1>
+        </div>
+      </div>
+    </div>
+
+    <p>
+        Analytic number theory uses the methods of asymptotic approximations,
+        complex analysis, and notions from probability theory to describe integers;
+        in particular the distribution of the prime numbers. Often methods of
+        harmonic analysis are brought to bear on some of these problems. Major
+        themes are:
+        <ol>
+            <li> An arithmetic function is a sequence $f:\mathbb{N} \rightarrow \mathbb{C}$.
+                In trying to understand such a thing, one often resorts to trying to
+                understand a sum of divisors $\sum_{d \vert n} \, f(d)$, the theory of the
+                Riemann-Stieltjes integral along with the Euler-Maclaurin formula, and
+                comparison of a sum to an integral. </li>
+            <li> The Riemann-Zeta function is the meromorphic continuation of
+                \[
+                    \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}, \text{ where } \Re(s) > 1 \text{ and } s \in \mathbb{C}.
+                \]
+                to the complex plane. The fact that this series has an Euler-product:
+                \[
+                    \zeta(s) = \prod_{p - \text{prime}} \left( 1 - \frac{1}{p} \right)^{-1}
+                \]
+                gives a relation between the Riemann-Zeta function in the primes.
+                The questions surrounding this relationship are deep, nuanced,
+                and mysterious, to say the least. </li>
+            <li> One can abstract the above series. Let $f$ be some arithmetic function.
+                Then one can consider the Dirichlet series:
+                \[
+                    \sum_{n=1}^{\infty} \frac{f(n)}{n^s}.
+                \]
+                These <em> generating functions </em> converge (or don't) based
+                on the arithmetic function $f$. At times, it is more fruitful to
+                use the generating function to understand the arithmetic function,
+                than trying to study the arithmetic function directly. </li>
+            <li>
+                It was through studying such objects, for real $s$, that Dirichlet
+                proved his famous theorem on primes in an arithmetic sequence.
+                The proof was achieved through studying so-called $L$-series
+                \[
+                    L(s, \chi) = \sum_{n=1}^{\infty} \frac{\chi(n)}{n^s}
+                \]
+                where $\chi$ is a Dirichlet character. A Dirichlet character has
+                some nice properties:
+                <ol>
+                    <li> $\chi(1) = 1$</li>
+                    <li> $\chi(mn) = \chi(m)\chi(n)$</li>
+                    <li> $\vert \chi(n) \vert \in \{0,1\}$. </li>
+                </ol>
+             </li>
+            <li>
+                Which functions have:
+                <ol>
+                    <li> An analytic continuation to a meromorphic function to
+                        the complex plane. </li>
+                    <li> A functional equation. </li>
+                    <li> An Euler Product. </li>
+                </ol>
+                These are the prime characteristics of the Riemann-Zeta function.
+                Can the study of functions, that have these properties, lend insight
+                into the Reimann-Zeta function? This leads one to study $L$-functions.
+                $L$-functions give one the tools to study arithmetic functions,
+                geometric curves, and number fields, through the use of analysis.
+                Understanding of $L$-functions is still largely conjectural.
+            </li>
+        </ol>
+    </p>
+
+    <p>
+        <b> References: </b>
+        <ol>
+            <li> Apostol, Tom, M., <em> Introduction to Analytic Number Theory </em>,
+                Undergraduate Texts in Mathematics, Springer, 1976 </li>
+            <li> DeKoninck, Jean-Marie, Luca, Florian, <em> Analytic Number
+                Theory: The Anatomy of the Integers </em>, Graduate Studies in Mathematics,
+                vol. 134, American Mathematical Society </li>
+            <li> Tenenbaum, G&acute;rald, France, Michel, Mend&egrave;s,
+                <em> The Prime Numbers and Their Distribution </em>, Student
+                Mathematical Libary, vol. 6, American Mathematical Society </li>
+            <li> Tenenbaum, G&acute;rald, <em> Introduction to Analytic and Probabilistic
+                Number Theory </em>, Graduate Studies in Mathematics, vol. 163,
+                American Mathematical Society </li>
+        </ol>
+    </p>
+
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

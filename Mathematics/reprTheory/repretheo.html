@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Representation Theory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Topics in Representation Theory</h1>
+        </div>
+      </div>
+    </div>
+
+    <p>
+    Let $V$ be a finite dimensional vector space. If $G$ is a group, then
+    a representation is a group homomorphism $\rho: G \rightarrow \operatorname{GL}(V)$.
+    Each element $G$ corresponds to some invertible linear transformation.
+    This induces an action, of the group $G$, on the vector space, where
+    we write $g \cdot v = \rho(g)(v)$. Using this action, we say that
+    $V$ is a $G$-module.
+    </p>
+
+    <p>
+    Mathematicians try to classify the objects that they are studying. It
+    is always nice if we can understand how and why two entities are different.
+    At least one reason for this, is to take something complicated and identify
+    it with something that we understand very well. One of the major
+    accomplishments of the twentieth century was the classification of finite
+    simple groups. Representation theory played a big role in this work.
+    The classification is broken down into:
+    <ol>
+        <li> Finite cyclic abelian groups </li>
+        <li> The alternating groups </li>
+        <li> Simple groups of Lie Type </li>
+        <li> Sporadic Groups </li>
+    </ol>
+    Classification problems are interesting enough, but are often highly
+    technical. One of the fundamental theorems used to classify finite groups
+    is the Feit-Thompson theorem which says that every finite group of odd
+    order is solvable. The proof is some 255 pages long.
+    </p>
+
+    <p>
+    One way that representation theory manifests itself naturally is in the
+    study of symmetries. One of the first finite groups one encouters in
+    an abstract algebra course is that fo the dihedral groups. These are
+    the symmetries of regular polygons. If one envisions a square in the
+    plane, the rotation of 90 degrees is a symmetry of the square. Another
+    symmetry is that of a reflection. These are both natural ideas that are
+    studied to some extent in High School geometry. It turns out that the
+    square has eight symmetries, and can be realized by the rotation of 90
+    degrees, a fixed reflection, and all combinations of these two elements.
+    \[
+      D_8 = \langle r, s \vert r^4 = s^2 = 1, srs = r^{-1}
+    \]
+    This presentation tells us that if we rotate the square four times we
+    get back to where we started, and the same if we reflect the square
+    twice. The last relation tells us that the rotation $r$ and the
+    reflection $s$ do not commute. That is $rs \neq sr$. There is another
+    presentation of this group using only reflections. Here is how the
+    dihedral group of order eight is presented as a Coxeter group
+    \[
+      D_8 = \langle \alpha, \beta \vert \alpha^2 = \beta^2 = (\alpha \beta)^4 = 1 \rangle
+    \]
+    </p>
+
+    <p>
+    These ideas arise in both chemistry and physics. Chemists use representations
+    to study the structure and symmetries of crystals for instance. Physics
+    researchers are interested in representations in the study of particle physics.
+    </p>
+
+    <p>
+    Here are some notes, from a series of talks, that I gave on modular
+    representation theory:
+    </p>
+
+    <p>
+        <b> References:</b>
+        <ol>
+            <li> Alperin, J.L., <em> Local Representation Theory: Modular Representations
+                as an introduction to the Local Representation Theory of Finite Groups </em>,
+                Revised edition, Cambridge Studies in Advanced Mathematics, Cambridge University Press, 1993. </li>
+            <li> Benson, D.J., <em> Modular Representation Theory: New Trends and Methods </em>,
+                Second corrected printing, Lecture Notes in Mathematics, Springer, 2007. </li>
+            <li> Erdmann, Karin, <em> Blocks of Tame Representation Type and Related Algebras </em>,
+                Lecture Notes in Mathematics, Springer, 1990 </li>
+            <li> Lux, Klaus, Pahlings, Herbert, <em> Representations of Groups: A Computational Approach </em>,
+                Cambridge Studies in Advanced Mathematics, Cambridge University Press, 2010. </li>
+            <li> Neusel, Mara, D., Smith, Larry, <em> Invariant Theory of Finite Groups </em>,
+                Mathematical Surveys and Monographs, American Mathematical Society, 2010 </li>
+            <li> Serre, Jean-Pierre, <em> Linear Representations of Finite Groups </em>, Fifth corrected edition,
+                Graduate Text in Mathematics, Springer, 1996. </li>
+        </ol>
+    </p>
+
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

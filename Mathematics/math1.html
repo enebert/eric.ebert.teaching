@@ -2,13 +2,20 @@
 <html lang="en">
 
   <head>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mathematics</title>
+    <title>Eric Ebert's Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +57,7 @@
 
       <!-- Page Heading -->
       <h1 class="my-4">Major Mathematical Interests
-        <small>Secondary Text</small>
+        <small>Focus Points</small>
       </h1>
 
       <!-- Project One -->
@@ -62,7 +69,16 @@
         </div>
         <div class="col-md-5">
           <h3>Representation Theory</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+          <p>
+          There are many different flavors of representation theory dependent on
+          what one's goals are. For a finite-dimensional vector space $V$, and a
+          group $G$, one can consider a group homomorphism $\rho:G \rightarrow
+          \operatorname{GL}(V)$. Each element of $G$ corresponds to some linear
+          transformation, which is invertible. This induces an action, of the
+          group, on the vector space. Using linear representations, and studying
+          this kind of action, has been very successful in mathematics.
+          </p>
+          <a class="btn btn-primary" href="./reprTheory/repretheo.html">View Notes</a>
         </div>
       </div>
       <!-- /.row -->
@@ -78,7 +94,15 @@
         </div>
         <div class="col-md-5">
           <h3>Invariant Theory</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+          <p>Invariant theory involves the study of a group $G$ acting on
+          polynomial functions of a geometric object called a variety. In 1900,
+          Hilbert asked whether or not certain types of rings were finitely
+          generated. Examples of problems that have been addressed are Hilbert's
+          14th problem, representations of Lie Groups, and the geometric
+          invariant theory, developed by Mumford, much of which has been applied
+          to the study of moduli spaces.
+          </p>
+          <a class="btn btn-primary" href="./invarTheory/invartheo.html">View Notes</a>
         </div>
       </div>
       <!-- /.row -->
@@ -94,7 +118,14 @@
         </div>
         <div class="col-md-5">
           <h3>Finite Groups of Lie Type</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+          <p>The first groups to be considered were the abelian groups and the
+          symmetric groups. Let $V$ be a finite dimensional vector space over $k$
+          a finite field. Groups such as $\operatorname{GL}(V)$ and $\operatorname{SL}(V)$
+          are examples, of groups of Lie type. The projective special linear
+          group $\operatorname{PSL}(n,q)$ is another example. The finite simple
+          groups of Lie type make up the majority of the finite simple groups.
+          </p>
+          <a class="btn btn-primary" href="./lieType/lietype.html">View Notes</a>
         </div>
       </div>
       <!-- /.row -->
@@ -111,7 +142,24 @@
         </div>
         <div class="col-md-5">
           <h3>Commutative Algebra &amp; Algebraic Geometry</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <p>
+          Commutative algebra deals with the study of rings where the multiplication
+          satisfies the property $a \cdot b = b \cdot a$. An example where this
+          does not hold is the algebra of $n \times n$ matrices. Hilbert gave
+          birth to commutative algebra, when he proved the following two
+          theorems, in pursuit of a question in invariant theory:
+          <ol>
+              <li> <b> Nullstellensatz:</b> Establishes a bijective correspondence
+                  between radical ideals and affine varieties, over an
+                  algebraically closed field </li>
+              <li> <b> Basissatz:</b> Every ideal in the polynomial ring in $n$
+                  variables, over a field, is finitely generated.
+          </ol>
+          These two theorems are a connection between commutative algebra and
+          algebraic geometry. I have a very large interest in elliptic curves
+          and diophantine type problems.
+          </p>
+          <a class="btn btn-primary" href="./algGeo/algnotes.html">View Notes</a>
         </div>
       </div>
       <!-- /.row -->

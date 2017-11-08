@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Algebraic Geometry &amp; Commutative Algebra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Algebraic Geometry &amp; Commutative Algebra</h1>
+        </div>
+      </div>
+    </div>
+
+    <p>
+        Let's start with some setup. A ring $(R, +, *)$ is an algebraic object
+        so that $(R,+)$ is an abelian group:
+        <ol>
+            <li> <b> Closure:</b> $a + b \in R$ for every $a,b \in R$. </li>
+            <li> <b> Associative:</b> $a + (b + c) = (a + b) + c$ </li>
+            <li> <b> Identity: </b> There exists $0_R$ such that, for every $x \in R$,
+                $0_R + x = x = x + 0_R$. </li>
+            <li> <b> Inverses: </b> Given $x \in R$, there exists a $y \in R$
+                such that $x + y = 0_R = y + x$. We usually write $y = -x$.
+        </ol>
+        That the group is abelian means that $x + y = y + x$, for every $x,y \in R$.
+        We also need the multiplication to be compatible with addition, in the sense that,
+        the distributive laws hold:
+        <ol>
+            <li> $a * (b + c) = a*b + a*c$ </li>
+            <li> $(a + b) * c = a*c + b*c$ </li>
+        </ol>
+        The multiplication, in a ring, is associative $a*(b*c) = (a*b)*c$.
+    </p>
+
+    <p>
+        <b>Notes: </b> A couple of notes.
+        <ol>
+            <li> It is not necessary for a ring to contain a multiplicative
+                identity, $1_R$. However, we will not pursue such rings here and
+                often the definition of a ring is given, with the assumption that
+                a $1_R$ exists. </li>
+            <li> Nor is it necessary for the multiplication of a ring to be
+                commutative; that is $ab \neq ba$ in a noncommutative ring. An
+                example of a noncommutative ring is the set of $n \times n$
+                matrices, over a field $k$, $\operatorname{Mat}_{n \times n}(k)$.</li>
+        </ol>
+    </p>
+
+    <p>
+    Often times, rings are too large to study outright. The following definition
+    and the forming of quotients helps with this problem.
+    </p>
+
+    <p>
+        <b> Defn.</b> An ideal $I$ of a ring $R$ is a subset of $R$ such that:
+        <ol>
+            <li> $I$ is closed under addition. </li>
+            <li> $rf$ is an element of $I$, for every element of $r \in R$ and $f \in I$.
+        </ol>
+    </p>
+
+    <p>
+        <b> Addtional Note:</b> Noncommutative rings are interesting to study.
+        There are some structure theorems, such as the Artin-Wedderburn theorem,
+        that are helpful. On the other hand, noncommutative rings display some
+        bizarre properties. A simple ring is one whose two-sided ideals are the
+        trivial ones. However, there exist simple rings which have nontrivial
+        left ideals.
+    </p>
+
+    <p>
+        While Hilbert was pursuing a problem in <a href=""> invariant
+        theory</a>, he proved the following two theorems.
+    </p>
+
+    <p>
+        <b> Nullstellensatz:</b> Let $R$ be a polynomial ring, in $n$ variables,
+        over an algebraically closed field $k$, and $J \subset R$ an ideal. Then
+        \[
+            I(V(J)) = \sqrt{J}
+        \]
+        where $V(J)$ is the set of points which vanish on all of the functions
+        in $J$.
+    </p>
+
+    <p>
+        <b> Basissatz:</b> Every ideal in the polynomial ring, in $n$ variables
+        over a field, is finitely generated.
+    </p>
+
+    <p>
+        These two theorems give a connection between the algebraic structure
+        of rings, and the geometry of varieties. A variety is determined by the
+        vanishing of a finite number of polynomials. These polynomials generate
+        an ideal, and the nullstellensatz tells us that this ideal is determined
+        up to radical. One can start looking at an arbitrary ring instead of
+        just being restricted to polynomial rings. This leads one to look at the
+        <em> spectrum </em> of the ring, to which one can apply the Zariski
+        topology. This is the beginning of abstracting the ideas in classical
+        algebraic geometry.
+    </p>
+
+    <p>
+        There are a number of nice numerical invariants, for a commutative
+        Noetherian ring. Two primary examples are:
+        <ol>
+            <li> The dimension of the ring.</li>
+            <li> The depth of the ring.</li>
+        </ol>
+        When the dimension and the depth are equal, we say that a ring is
+        <em> Cohen-Macaulay </em>. A <em> Gorenstein </em> ring is a
+        Cohen-Macaulay ring which is Type 1. These are very nice properties to
+        have in a ring. However, there are still some behaviors that they exhibit
+        we would like to get under control. Grothendieck put forward the idea of
+        an <em> excellent </em> ring. These are the rings that are believed to
+        have a resolution of singularities. These are but some of the notions that
+        are used in the modern study of commutative algebra.
+    </p>
+
+
+    <p>
+        The above is mostly motivated from the algebraic point-of-view. What of
+        the geometric issues? The above tells us that we can take some variety
+        $X$ and consider the ideal $I(X)$. We can then take consideration of
+        the ring of regular function $k[X] = k[x_1, \ldots, x_n]/I(X)$. Taking
+        quotients of regular functions, one forms the rational functions $k(X)$.
+        One can then consider the transcendence degree of $k(X)$. Even though
+        this is a rather course description of a transcendental extension, it
+        conincides with the dimension of the variety $X$.
+    </p>
+
+    <p>
+        The tools, one uses in algebraic geometry, are dependent on the type of
+        problems that one is working on. I have a large interest in elliptic curves,
+        which has lead me to consider diophantine problems, and the tools of
+        arithmetic algebraic geometry. This tends to lead one quickly down the
+        road of sheaves (local descriptions and gluing) and schemes. These tools
+        are very technical and abstract; too the point that some mathematicians
+        readily express their fear regarding them. One of the things mathematics
+        can teach us is to not be afraid of language. It also reinforces the
+        fact that one must be able to communicate more than the definitions, for
+        language to be effective. 
+    </p>
+
+    <p>
+        As a graduate student, I had the opportunity to take courses in tight
+        closure, local cohomology, and algebraic geometry. I hope to get some
+        notes up that were put together for an underground seminar in
+        commutative algebra.
+    </p>
+
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

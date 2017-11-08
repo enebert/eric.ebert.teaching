@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Invariant Theory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Invariant Theory</h1>
+        </div>
+      </div>
+    </div>
+
+    <p>
+        Invariant theory lives to describe the behavior of group actions on
+        polynomial rings. The study began trying to describe binary forms.
+        However, extending the techniques used, into the realm of multivariate
+        polynomials, met many obstructions. Enter the dawn of the 20th century
+        and David Hilbert.
+    </p>
+
+    <p>
+        A linear algebraic group $G$ is some Zariski closed subgroup of
+        $\operatorname{GL}(V)$, where $V$ is a finite dimensional vector space.
+        Suppose that $X$ is some affine variety. A variety is an
+        algebreo-geometric object that is determined by the vanishing of a finite
+        number of polynomials $f_1, f_2, \cdots , f_k$. One can then consider
+        the ring of regular functions on $X$:
+        \[
+            k[X] \cong k[x_1, \ldots, x_n]/I(V)
+        \]
+        where the ideal $I(V)$ is determined by the polynomials $f_1, f_2, \cdots, f_k$
+        up to radical.
+    </p>
+
+    <p>
+        In 1900, Hilbert asked wheter or not certain types of rings are finitely
+        generated. He was able to prove the following statement for the general
+        linear group.
+    </p>
+
+    <p>
+        <b> Hilbert's 14th Problem:</b> If $G$ is a linear algebraic group, and
+        $X$ an affine $G$-variety, is it true that the ring of invariants $k[X]^G$
+        is finitely generated? (Here $k$ is the complex numbers.)
+    </p>
+
+    <p>
+        It turns out that the answer to this question was in the negative. In
+        the 1950's, Nagata found a counterexample. He gave a series of lectures
+        on this topic, at the Tata Institute in 1965. The lecture notes can be
+        found <a href="">here</a>.
+    </p>
+
+    <p>
+        So the statement, in general, was found to not hold. It does beg the question:
+        With so many positive examples, does there exist a class of linear algebraic groups,
+        for which Hilbert's 14th problem is true? The answer is yes! These linear
+        algebraic groups are said to be <em> linearly reductive </em>; meaning that their
+        representations can be broken down into building blocks called reducible
+        representations.
+    </p>
+
+    <p> <b> Note:</b> It is perhaps natural to ask: Are there other types of
+        linear algebraic groups beyond those that are linearly reductive? There
+        are three notions that are interesting to this discussion:
+        <ol>
+            <li> Linearly Reductive </li>
+            <li> Reductive </li>
+            <li> Geometrically Reductive </li>
+        </ol>
+        It turns out, when working over characteristic zero fields, that linearly
+        reductive and reductive are equivalent. This fails to hold when the characteristic
+        of the field is $p > 0$. Haboush proved that Reductive and Geometrically
+        Reductive are equivalent.
+    </p>
+    
+    <p>
+        The study of invariant theory lead to Hilber proving three major theorems:
+        <ol>
+            <li> The Nullstellensatz, which translates to "the zero places theorem" </li>
+            <li> The Basissatz, which makes the statement that a polynomial ring over
+            a Noetherian ring is finitely generated. </li>
+            <li> A statement that is now known as the Syzygy theorem.
+        </ol>
+        These theorems have become fundamental in modern commutative algebra. With
+        these facts proven, and the development of the symbolic method, invariant
+        theory was thought to be dead.
+    </p>
+
+    <p>
+        David Mumford brought invariant theory back into the fold of modern research
+        mathematics, in the 1960's. Harkening back to the way we started this
+        discussion: let $G$ be some linear algebraic group and $X$ some $G$-variety.
+        Perhaps the immediate question one could ask: Do the orbits of the action
+        have the structure of a variety? It turns out that the answer is no.
+        However, one can form the categorical quotient $X//G$, by utilizing the
+        closed orbits of a group action on a variety. This construction lead to
+        inquiries and exploaration around objects called moduli spaces that parameterize
+        certain types of geometric objects.
+    </p>
+
+    <p>
+        Here is a set of notes to a talk I gave on the invariant theory of finite
+        groups:
+        <a> </a>
+    </p>
+    <p>
+        <b> References:</b>
+        <ol>
+            <il> Neusel, Mara, D., <em> Invariant Theory </em>, Student Mathematical
+                Libary, American Mathematical Society, 2006.
+        </ol>
+    </p>
+
+    <p>
+        Here is a set of notes that I prepared for a talk I gave, while taking a
+        course in Toric Varieties.
+        <a > </a>
+    </p>
+
+    <p>
+    <b> References: </b>
+    <ol>
+        <li> Brion, Michel, <em> Invariants et Covariants des Groupes Alg&eacute;briques R&eacute;ductifs </em>,
+            Notes de l'&eacute;cole d'&eacute;t&eacute; "Th&eacute;orie des invariants", Monstair, 1996</li>
+        <li> Cox, David, Little, John, B., Schenck, Henry K., <em> Toric Varieties </em>,
+            Graduate Studies in Mathematics, American Mathematical Society, 2011. </li>
+        <li> Dolgachev, Igor, <em> Lectures on Invariant Theory </em>, London Mathematical
+            Society Lecture Note Series, Cambridge University Press, 2003. </li>
+        <li> Fulton, William, <em> Introduction to Toric Varieties </em>, Annals
+            of Mathematics, Princeton University, 1993.
+    </ol>
+    </p>
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

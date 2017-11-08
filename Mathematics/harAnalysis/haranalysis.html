@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eric Ebert's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+        margin-left: 1in;
+        margin-right: 1in;
+        padding-bottom: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Harmonic Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+          <ul class="list-unstyled">
+            <li>Bootstrap 4.0.0-beta</li>
+            <li>jQuery 3.2.1</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p>
+        Harmonic analysis strives to understand the behavior of functions, using
+        analytic tools. In particular, it works to understand oscillating functions
+        and waveforms. It employs tools from functional analysis, linear algebra,
+        and its cousin Fourier analysis. The connection between harmonic analysis
+        and functional analysis takes place via Hilbert spaces.
+    </p>
+
+    <p>
+        <b> Hilbert Space: </b> An inner-product space is said to be a <em>
+            Hilbert space</em> if it is complete with respect to the norm induced
+            by the inner-product.
+    </p>
+
+    <p>
+        <b> Banach Space: </b> A <em> Banach space </em> is a complete normed
+        space.
+    </p>
+
+    <p>
+        <b> Note: </b> Not every norm is induced by an inner-product. This means
+        that the two definitions above describe different spaces. To say that a
+        space is <em> complete </em> means that every Cauchy sequence converges,
+        and that value lies in the space.
+    </p>
+
+    <p>
+        At an elementary level, Fourier analysis tries to represent a function $f$
+        as a series of sines and cosines:
+        \[
+            \frac{1}{2}a_0 + \sum_{n=1}^{infty} a_n \cos(n\theta) + b_n \sin(n\theta)
+        \]
+        where the coefficients are given by:
+        \[
+            a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx
+        \]
+        and
+        \[
+            b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) \, dx
+        \]
+    </p>
+
+    <p>
+        There are some readily natural questions to be answered:
+        <ol>
+            <li> What are the conditions under which a Fourier series is convergent? </li>
+            <li> Is every trigonometric series convergent? Is it a Fourier series? </li>
+            <li> Does every function have a representation as a Fourier series? </li>
+        </ol>
+        These are questions that are all explored in an initial introduction to the topic.
+    </p>
+
+    <p> <b>Parseval's Theorem:</b> Suppose that $f(x)$ is some square integrable
+        function on $[-\pi, \pi]$, that is $\int_{-\pi}^{\pi} [f(x)]^2 \, dx < \infty$
+        with Fourier series
+        \[
+            \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(n\theta) + b_n \sin(n\theta).
+        \]
+        One can then conclude
+        \[
+            \frac{1}{\pi} \int_{-\pi}{\pi} [f(x)]^2 = \frac{a_0^2}{2} + \sum_{n=1}^{\infty} (a_n^2 + b_n^2).
+        \]
+        This establishes a link between square integrable functions and square
+        summable sequences, $L^2[-\pi, \pi] \rightarrow \ell^2$.
+    </p>
+
+    <p>
+        The techniques of harmonic analysis appear in a wide array of mathematical
+        topics: number theory, topological groups, as well as science and engineering.
+        Understanding the oscillatory nature of waves often uses the tools of harmonic
+        analysis. This has lead to various applications in Electrical Engineering.
+        In particular, compression techniques have been developed via the Fourier
+        transform, and its discrete cousin, to compress images and music.
+    </p>
+
+    <p>
+        <b> Hardy spaces:</b> One can pursue two theories simultaneously. That
+        which takes place in the unit disk and that which occurs in the upper-half-plane,
+        which we will denote by $\mathbb{C}_+$. For an analytic function, in the
+        unit disk $f$, we say that $f \in \text{H}^p(\mathbb{D})$ if
+        \[
+            \sup_{0 < r < 1} \int_0^{2\pi} \vert f(re^{i \theta}) \vert^p \, \frac{d\theta}{\pi}
+        \]
+        is finite. This defines a norm $\Vert \cdot \Vert_p$, on the space. We
+        have the norm, for when $p = \infty$ as well, $\Vert f \Vert_{\infty} = \sup_{z \in \mathbb{D}} \vert f(z) \vert$
+        defining the space
+        \[
+            \text{H}^{\infty}(\mathbb{D}) = \left\{f \in \mathbb{A}(\mathbb{D}) \vert \sup_{\stackrel{0 < r < 1}{\theta \in \mathbb{R}}} \vert f(re^{i\theta}) \vert < + \infty \right\}$.
+        \]
+        One can then make analogous definitions for the upper-half-plane.
+    </p>
+
+    <p>
+        <b> Some Cornerstones of $\text{H}^p$ Theory:</b>
+        <ol>
+            <li> The subharmonicity of $\vert f \vert^p$, $p > 0$, for an analytic
+                function $f$, in the unit disk, and the subharmonicity of $\log \vert f \vert$
+                and $\log^+ \vert f \vert$. </li>
+            <li> Nontangential and radial maximal functions, which describe the
+                behavior at the boundary. </li>
+            <li> Use of Blaschke products to factor out all zeros of an analytic
+                function. </li>
+            <li> Use of singular integrals, understood in the Cauchy Principal-Value sense. </li>
+        </ol>
+        One of the highlights of the theory, is the ability to factor a function
+        into a Blaschke product, an <em> inner </em> and <em> outer </em> functions.
+    </p>
+
+    <p>
+        There are two distinct parts of my mathematical life. Before I knew what
+        harmonic analysis was and then after I became comfortable with the basic
+        techniques. They are extremely interesting techniques, and in particular,
+        provide intellectually stimulating paths of inquiry. These ideas found a
+        way into my Linear Algebra courses that I've taught. This was mostly
+        driven by my students' interests. I never would have been comfortable
+        enought, to make this happen, without encountering these topics in class
+        and via my colleagues own inquiries.
+    </p>
+
+    <hr>
+
+    <hr>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+          <!-- /.container -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
