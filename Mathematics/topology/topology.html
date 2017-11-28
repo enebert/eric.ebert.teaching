@@ -107,8 +107,96 @@
         the <em> closed forms </em> are to being <em> exact </em>.
     </p>
 
+    <p> <b> Smooth Manifolds:</b>
+        A <em> manifold </em> is a mathematical abstraction of a surface. The theory
+        of smooth manifolds begins with a number of technicalities and language
+        around making sure that there is an <em> atlas </em> that completely
+        describes the manifold, via local patches. These patches allow one to
+        use the analytic theory in $\mathbb{R}^n$, in this setting. One then
+        works towards the definitions of <em> tangent spaces </em>, <em> vector
+        fields </em>, and <em> flows </em>. In what follows, $M$ is an $n$-dimensional
+        manifold, $T_pM$ the tangent space of $M$ at $p$, and $f: M \rightarrow \mathbb{R}$
+        a smooth function on $M$.
+    </p>
+
     <p>
-        
+    <b> Morse Theory:</b> In an introduction to Calculus, one learns maximization
+    and minimization methods, as an application of the first and second derivatives.
+    From this, we know that interest in when the first derivative vanishes, and the
+    sign of the second derivative are significant. How can one take these techniques
+    into higher dimesions, and more abstract settings?
+    </p>
+
+    <p>
+        Here's a first step. A <em> critical point </em> of a smooth function
+        $f: M \rightarrow \mathbb{R}$ is a point $p \in M$ such that the differential
+        $df_p: T_pM \rightarrow T_{f(p)}\mathbb{R}$ vanishes. This is the equivalent
+        of the first derivative being zero.
+    </p>
+
+    <p>
+        Here's a second step. The <em> Hessian </em> $H_p(f)$, of a smooth function
+        $f: M \rightarrow \mathbb{R}$, at a critical point $p$, is the symmetric
+        bilinear mapping $H_p: T_pM \times T_pM \rightarrow \mathbb{R}$ defined by
+        mapping $(v,w) \mapsto v_p (w' \cdot f)$, where $w'$ is an extension of $w$
+        to an open neighborhood of $p$. The Hessian fulfills the role of the second
+        derivative. Here are a couple of definitions:
+        <ol>
+            <li> The critical point $p$ is said to be <em> nondegenerate </em> if
+                and only if $\det(H_p(f)) \neq 0$. </li>
+            <li> A <em> Morse function </em> on a smooth manifold is a smooth
+                function whose critical points are all nondegenerate.
+        </ol>
+    </p>
+
+    <p>
+        The first example of a Morse function is usually that of the height
+        function on a torus standing up. There are four critical points. If one
+        considers dumping water and letting it "flow" over the torus, the water
+        will flow from the maximum to the minimum. The only "stability" is at the
+        critical point and any perturbation is "unstable" and will want to flow
+        to more stable point, where it can come to rest. If one considers a similar
+        scenario, with the "relative" maximum "inside" the torus, then it will flow
+        down to the "relative" minimum. One can do a local decomposition into <em>
+        stable </em> and <em> unstable </em> manifolds.
+    </p>
+
+    <p>
+        The point, of all of this, is that Morse theory allows one to study the
+        manifold via the smooth functions on $M$. Further, the Morse functions
+        are dense in the set of smooth functions. Hence, given some smooth function,
+        that is not a Morse function, we can approximate it via Morse functions,
+        through small perturbations. The <em> Morse Lemma </em> states that there
+        is a canonical way to write a function around a nondegenerate critical
+        point.
+    </p>
+
+    <p>
+        This is but the beginning of an extrodinarily interesting story. On a
+        Riemmanian manifold $\langle M, g \rangle$, one can consider the negative
+        gradient flow. Smooth functions decrease along gradient flow lines. It
+        can then be shown that a flow line, of a smooth function $f$, begins and
+        ends at a critical point. So, we again have a connection between what's happening
+        analytically and the geometry of the manifold.
+    </p>
+
+    <p>
+        A deep question: What if we are working on an infinite-dimensional
+        manifold? As always, moving from the finite-dimensional situation to an
+        infinite-dimesional situation leaves one with great difficulties. The
+        ideas behind <em> Floer Homology </em> were developed by Andreas Floer,
+        in the 1980's. He developed these ideas in pursuit of a proof to the
+        Arnold conjectures. The Arnold conjectures are statements that take place
+        in the setting of <em> symplectic manifolds </em>. It turns out that a
+        symplectic manifold is, in some sense, very rigid and has to be even-dimensional.
+        The various constructions of Floer homology led to major developments in
+        answering open questions, in differential geometry.
+    </p>
+
+    <p>
+        <b> Remark: </b> If symplectic manifolds have to be even-dimensional, you
+        may very well be asking yourself: What about odd-dimensional structures?
+        The analog, if you will, is that of a <em> contact manifold </em>
     </p>
 
     <p>
@@ -123,7 +211,7 @@
     </p>
 
     <p>
-        As I delved further into geometry from an algebraic point-of-view, I
+        As I delved further into geometry, from an algebraic point-of-view, I
         became more curious about what the analytic picture looked like. This lead
         me to take an introduction to smooth manifolds. A course that once again
         contained multiple sequences of consume / regurgitate. My first course
@@ -135,11 +223,32 @@
         My last semester of graduate school I did an independent study in Morse
         Theory. Through this study, the topological concepts I had been so
         frustrated by, in the past, finally came together. Having a context
-        that interested me, and provided motivations for the techniques learned,
+        that interested me, provided motivations for the techniques learned, and
         allowed me to delve deeply. Morse theory was as compelling as my studies
         in representation theory. Sometimes patience is required, until a topic
         comes along that provides the proper context, and a mentor that's good
         for you.
+    </p>
+
+    <p>
+        <b> References:</b>
+        <ol>
+            <li> Banyaga, Augustin, Hurtubise, David <em> Letures on Morse Homology </em>,
+                Kluwer Texts in the Mathematical Sciences, no. 33, Springer, 2005 </li>
+
+            <li> Bredon, Glen E., <em> Topology and Geometry </em>, Gradaute Texts
+                in Mathematics, no. 139, Springer, 1993.
+
+            <li> Hirsch, Morris W., <em> Differential Topology </em>, Graduate Texts
+                in Mathematics, Springer, 1997 </li>
+
+            <li> Rotman, Joseph J., <em> An Introduction to Algebraic Topology </em>,
+                Graduate Texts in Mathematics, no. 119, Springer, 1988 </li>
+
+            <li> Hofer, Helmut, Taubes, Clifford H., Weinstein, Alan, Zehnder, Eduard, eds.,
+                <em> The Floer Memorial Volume </em>, Progress in Mathematics, Berkh&auml;user,
+                1995.
+        </ol>
     </p>
 
     <hr>
