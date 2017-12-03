@@ -5,11 +5,40 @@
  */
 
 body {
-    padding-top: 54px;
+    padding-top: 56px;
 }
 
 @media (min-width: 992px) {
     body {
         padding-top: 56px;
     }
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    color: white;
+    background-color: inherit;
+}
+
+ul.breadcrumb.li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    padding: 150px 0;
 }

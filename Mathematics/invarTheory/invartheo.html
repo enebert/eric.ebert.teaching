@@ -2,7 +2,11 @@
 <html lang="en">
 
   <head>
+      <!-- Custom Fonts -->
+      <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+      <!-- MathJax -->
       <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
       </script>
@@ -19,6 +23,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/1-col-portfolio.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <style>
@@ -47,30 +54,16 @@
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Invariant Theory</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../../index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <ul class="breadcrumb">
+              <li><a href="../../index.html"> Home </a></li>
+              <li><a href="../math1.html"> Mathematics </a></li>
+              <li class="active">Invariant Theory</li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -237,13 +230,38 @@
 
     <hr>
 
-        <!-- Footer -->
-        <footer class="py-5 bg-dark">
-          <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Eric Ebert 2017</p>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Made with Passion</strong>
+            </h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:ebert.eric.n@gmail.com">ebert.eric.n at gmail.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/BiggestMeow">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/eric-ebert-68848279">
+                  <i class="fa fa-linkedin fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Eric Ebert 2017</p>
           </div>
-          <!-- /.container -->
-        </footer>
+        </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -18,6 +18,29 @@ body {
   margin-bottom: 15px;
 }
 
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    color: white;
+    background-color: inherit;
+}
+
+ul.breadcrumb.li {
+    display: inline;
+    font-size: 20px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: white;
+    text-decoration: underline;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -47,7 +70,6 @@ body {
     color: #333;
     background-color: rgba(255, 255, 255, .8);
 }
-
 
 /* Custom Horizontal Rule */
 
