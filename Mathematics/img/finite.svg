@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="700"
+   height="300"
+   viewBox="0 0 185.20834 79.375002"
+   version="1.1"
+   id="svg9325"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="finite.svg">
+  <defs
+     id="defs9319" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="367.78235"
+     inkscape:cy="209.67696"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="741"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata9322">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-217.62498)">
+    <g
+       transform="matrix(0.33508677,0,0,0.16309314,-0.68159836,125.94973)"
+       id="layer1-6"
+       inkscape:label="Layer 1">
+      <rect
+         y="633.37305"
+         x="61.010849"
+         height="361.00876"
+         width="359.9986"
+         id="rect2989"
+         style="fill:#000003;fill-opacity:0.109375;fill-rule:evenodd;stroke:#000000;stroke-width:1.00139809px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <flowRoot
+         style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot3759"
+         xml:space="preserve"><flowRegion
+           style="font-family:sans-serif"
+           id="flowRegion3761"><rect
+             style="font-family:sans-serif"
+             y="20.380592"
+             x="20.203051"
+             height="85.862968"
+             width="124.24876"
+             id="rect3763" /></flowRegion><flowPara
+           style="font-size:40px;line-height:1.25;font-family:sans-serif"
+           id="flowPara3765"> </flowPara></flowRoot>      <path
+         transform="translate(0,572.36218)"
+         inkscape:connector-curvature="0"
+         id="path3767"
+         d="M 30,30 C 450,450 450,450 450,450"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         transform="translate(0,572.36218)"
+         inkscape:connector-curvature="0"
+         id="path3769"
+         d="M 30,450 C 450,30 450,30 450,30"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         transform="translate(0,572.36218)"
+         inkscape:connector-curvature="0"
+         id="path3771"
+         d="m 240,40 v 400 0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         transform="translate(0,572.36218)"
+         inkscape:connector-curvature="0"
+         id="path3773"
+         d="M 40,240 H 440"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         id="text3794"
+         y="872.36218"
+         x="370"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="872.36218"
+           x="370"
+           id="tspan3796"
+           sodipodi:role="line">1</tspan></text>
+      <text
+         id="text3798"
+         y="752.36218"
+         x="370"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="752.36218"
+           x="370"
+           id="tspan3800"
+           sodipodi:role="line">α</tspan></text>
+      <text
+         id="text3802"
+         y="952.36218"
+         x="280"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="952.36218"
+           x="280"
+           id="tspan3804"
+           sodipodi:role="line">β</tspan></text>
+      <text
+         id="text3806"
+         y="682.36218"
+         x="290"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="682.36218"
+           x="290"
+           id="tspan3808"
+           sodipodi:role="line">αβ</tspan></text>
+      <text
+         id="text3810"
+         y="952.36218"
+         x="170"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="952.36218"
+           x="170"
+           id="tspan3812"
+           sodipodi:role="line">βα</tspan></text>
+      <text
+         id="text3814"
+         y="862.36218"
+         x="90"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="862.36218"
+           x="90"
+           id="tspan3816"
+           sodipodi:role="line">βαβ</tspan></text>
+      <text
+         id="text3818"
+         y="682.36218"
+         x="160"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="682.36218"
+           x="160"
+           id="tspan3820"
+           sodipodi:role="line">αβα</tspan></text>
+      <text
+         id="text3822"
+         y="802.36218"
+         x="10"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:24px;line-height:1.25;font-family:sans-serif"
+           y="802.36218"
+           x="10"
+           id="tspan3824"
+           sodipodi:role="line">w<tspan
+   id="tspan3832"
+   style="font-size:65.00091553%;font-family:sans-serif;baseline-shift:sub">0</tspan>=αβαβ=βαβα</tspan></text>
+      <text
+         transform="translate(0,572.36218)"
+         id="text3826"
+         y="122.406"
+         x="-166.67517"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:40px;line-height:1.25;font-family:sans-serif"
+           y="122.406"
+           x="-166.67517"
+           id="tspan3828"
+           sodipodi:role="line"> </tspan></text>
+      <text
+         transform="translate(0,572.36218)"
+         id="text3019"
+         y="269.88828"
+         x="434.3656"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:40px;line-height:1.25;font-family:sans-serif"
+           y="269.88828"
+           x="434.3656"
+           id="tspan3021"
+           sodipodi:role="line">α</tspan></text>
+      <text
+         id="text3023"
+         y="1032.3622"
+         x="410"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:40px;line-height:1.25;font-family:sans-serif"
+           y="1032.3622"
+           x="410"
+           id="tspan3025"
+           sodipodi:role="line">β</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.87915707px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.45742095px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="217.05354"
+       y="159.52705"
+       id="text10119"
+       transform="scale(0.70054868,1.4274526)"><tspan
+         sodipodi:role="line"
+         id="tspan10117"
+         x="217.05354"
+         y="159.52705"
+         style="stroke-width:0.45742095px">Weyl  Chambers</tspan></text>
+  </g>
+</svg>
