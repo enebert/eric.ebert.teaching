@@ -94,7 +94,7 @@
             \end{CD}
         \]
         Note that $2$ lies in the ideal $\langle 1-i \rangle$ because $(1+i)(1-i) = 2$. One
-        says that $2$ is a <em> split </em> prime, in the extension, sense it factors.
+        says that $2$ is a <em> split </em> prime, in the extension, since it factors.
         It turns out that there can only be finitely many such primes. There are
         three types of primes <em> split </em>, <em> ramified </em>, and <em> inert </em>.
         They are interesting enough, in isolation, but really one wants to use the behavior
@@ -134,6 +134,96 @@
     </p>
 
     <p>
+        <b> The Dedekind Zeta Function: </b> We take a small look regarding the
+        intersection between trying to uncover the algebraic structure of a
+        number ring, and analytic techniques. As noted in the analytic number
+        theory section, the Riemann-Zeta function is defined by:
+        \[
+            \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}, \text{ where   } \Re(s) > 1.
+        \]
+        There is an analog to this idea, taken from an algebraic point-of-view.
+        It was Hecke who first defined the Dedekind-Zeta function, as follows:
+        \[
+            \zeta_K(s) = \sum_{I} \frac{1}{N(I)^s}
+        \]
+        where the sum is taken over the integral ideals in $\mathcal{O}_K$. One
+        way to define the <em> norm </em> is by taking $N(I)$ to be the size of
+        the quotient ring $\mathcal{O}_K/I$. Landau was able to prove the
+        following analog to the Prime Number Theorem:
+    </p>
+
+    <p>
+        <b> Prime Ideal Theorem: </b> Let $K$ be an algebraic number field. The
+        number of prime ideals $\mathfrak{p}$, with $N(\mathfrak{p}) \leq x$ is
+        asymptotic to $x/\log x$ as $x \rightarrow \infty$.
+    </p>
+
+    <p>
+        <b> Q: </b> If the Riemann-Zeta function and the Dedekind-Zeta function
+        have the following traits in common:
+        <ol>
+            <li> They essentially have the same asymptotic behavior $x / \log x$. </li>
+            <li> They are written as series that have a similar form.
+        </ol>
+        Is it possible to obtain any of the other analogs to Riemann-Zeta:
+        <ol>
+            <li> Does the Dedekind-Zeta function have an Euler product? </li>
+            <li> Can we get extend $\zeta_K(s)$ to a meromorphic function? </li>
+            <li> Can we write the Dedekind-Zeta function as a Dirichlet series
+                $\sum_{n=1}^{\infty} \frac{a_n}{n^s}$ and if so, what are the $a_n$? </li>
+        </ol>
+    </p>
+
+    <p>
+        <b> Euler Product: </b> The intuition behind why there is an Euler product
+        is via the generalization of the Fundamental Theorem of Arithmetic. Again,
+        we are using the fact that ideals factors uniquely in a Dedekind domain,
+        along with the multiplicativity of the norm. This is the same idea used
+        when studying Dirichlet series. We will avoid issues of convergence, to
+        insure that we don't get bogged down in the technicalities and miss the story.
+        Just as with the Riemann-Zeta function, the series representation
+        \[
+            \zeta_K(s) = \sum_{I} \frac{1}{N(I)^s}
+        \]
+        yields the product
+        \[
+            \prod_{\mathfrak{p}} \left(1 + \frac{1}{N(\mathfrak{p}^s)} + \frac{1}{N(\mathfrak{p}^{2s})} + cdots \right)
+        \]
+        where the product is taken over the prime ideals $\mathfrak{p}$ in the ring
+        of integers $\mathcal{O}_K$. The idea is that when the product is multiplied out
+        term-by-term, each ideal $I$ will appear exactly once. Now notice that, for
+        each prime ideal $\mathfrak{p}$, the factor is a geometric series. This,
+        at least intuitively, justifies our writing
+        \[
+            \zeta_K(s) = \prod_{\mathfrak{p}} \left(1 - \frac{1}{N(\mathfrak{p})^s} \right)^{-1}
+        \]
+        for $\Re(s) > 1$. The following theorem gives us an answer to (2), as well.
+    </p>
+
+    <p>
+        <b> Theorem: </b> Let $K$ be a number field. Then $\zeta_k$ is a meromorphic
+        function on the half-plane $\Re(s) > 1 - \frac{1}{[K:\mathbb{Q}]}$, analytic
+        everywhere except for the simple pole at $s=1$. Further,
+        \[
+            \zeta_K(s) = \sum_I \frac{1}{N(I)^s} = \prod_{\mathfrak{p}} \left(1 - \frac{1}{N(\mathfrak{p})^s})^{-1}
+        \]
+        with absolute convergence for $\Re(s) > 1$.
+    </p>
+
+    <p>
+        The second question gives us a connection between the algebraic structure
+        of $\mathcal{O}_K$, the analytic properties of $\zeta_K$, and the class
+        number. It turns out that one can write
+        \[
+            \zeta_K(s) = \sum_{n=1}^{\infty} \frac{a_n}{n^s}
+        \]
+        where the $a_n$ are the number of ideals with norm $n$. One can proceed
+        from here to get the class number formula. See Marcus Chapter 7. In the
+        exercises in Montgomery and Vaugh, the ideas above are formulated for
+        what happens in for quadratic number fields.
+    </p>
+
+    <p>
         <b> References: </b>
         <ol>
             <li> Marcus, Daniel, <em> Number Fields </em>, Universitext, Springer, 1977. </li>
@@ -141,6 +231,8 @@
                 in Advanced Mathematics, Cambridge University Press, 1994 </li>
             <li> Ireland, Kenneth, Rosen, Michael, <em> A Classical Introduction to Modern Number Theory </em>,
                 Second Edition, Graduate Texts in Mathematics, Springer, 1990. </li>
+            <li> Montgromery, Hugh L., Vaughn, Robert, <em> Multiplicative Number Theory I: Classical Theory </em>,
+                Cambridge Studies in Advanced Mathematics, Cambridge, 2007 </li>
             <li> Samuel, Pierre, <em> Algebraic Theory of Numbers </em>, Dover reprint, 1990.</li>
         </ol>
     </p>
