@@ -10,8 +10,13 @@
 
     <title>Curriuculum &amp; Course Development</title>
 
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Mathematics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
@@ -20,33 +25,15 @@
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="../index.html"> Home </a></li>
+                <li class="active">CS Courses</li>
+            </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -65,8 +52,15 @@
         </div>
         <div class="col-md-5">
           <h3>Informatics</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>
+              The primary purpose of this course has been to get students acquainted
+              to the various reasons people want to model data. I've taught this course,
+              using Python, and doing exercises and projects around population growth,
+              financial models, and studying recursion through fractals. For the 2018 - 2019
+              school year, we are going to teach the course using the R language. I
+              hope to teach some basic statistics and discuss data science.
+          </p>
+          <!-- <a class="btn btn-primary" href="#">View Project</a> -->
         </div>
       </div>
       <!-- /.row -->
@@ -82,8 +76,18 @@
         </div>
         <div class="col-md-5">
           <h3>Programming Python</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>
+              I've loved teaching the introductory programming course. One of students' favorite aspects
+              is learning turtle, and using it to get immediate response to the
+              the code they write. It is one of my favorite topics because I get
+              to see student's creativity, and am always excited to see what they
+              create. Turtle can be used to introduce all of the basic constructs
+              in Python, so I tend to make pretty heavy use of turtle. The course
+              ends with an introduction to object-oriented programming. I have
+              also taught an independent study, where we explored advanced topics
+              in Python.
+          </p>
+          <a class="btn btn-primary" href="#">View Course</a>
         </div>
       </div>
       <!-- /.row -->
@@ -99,8 +103,24 @@
         </div>
         <div class="col-md-5">
           <h3>Information Security</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>
+              This course differs, from the cryptography course, in emphasis. I
+              usually take a trip through error-correcting codes to get students
+              use to working with matrices and bit sequences. There is also an
+              emphasis on writing, interpreting, and implementing algorithms.
+              Hence, the number theory taught in the course is always done from
+              a computational perspective.
+          </p>
+          <p>
+              I've been using Haskell to implement the algorithms in this course.
+              Choosing a functional programming language may seem odd, but my
+              desire is to expose students to a different paradigm. It also
+              emphasizes using recursion, list comprehensions, zip, and folds to accomplish
+              iteration. Further, Haskell is a compiled language with a REPL. This
+              allows students the ability to gain some experience with these tools
+              without the overhead of learning a language like C or C++.
+          </p>
+          <!-- <a class="btn btn-primary" href="#">View Project</a> -->
         </div>
       </div>
       <!-- /.row -->
@@ -117,8 +137,15 @@
         </div>
         <div class="col-md-5">
           <h3>Object Oriented Programming</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <p>
+              Two courses have been developed emphasizing the object-oriented
+              paradigm. One focuses on using OOP as an organizational tool to
+              build games and other projects. The other emphasizes theoretical
+              aspects of the paradigm along with understanding how they've been
+              implemented in Java. These courses are taught in a combination of
+              a seminar and project-based learning.
+          </p>
+          <!-- <a class="btn btn-primary" href="#">View Project</a> -->
         </div>
       </div>
       <!-- /.row -->
@@ -142,11 +169,40 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer>
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Made with Passion</strong>
+            </h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:ebert.eric.n@gmail.com">ebert.eric.n at gmail.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/BiggestMeow">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/eric-ebert-68848279">
+                  <i class="fa fa-linkedin fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Eric Ebert 2017</p>
+          </div>
+        </div>
       </div>
-      <!-- /.container -->
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
