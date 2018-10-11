@@ -39,7 +39,7 @@
           <ul class="breadcrumb">
               <li><a href="../../index.html"> Home </a></li>
               <li><a href="../curriculum1.html"> Math Courses </a></li>
-              <li class="active">Linear Algebra</li>
+              <li class="active">Cryptography</li>
           </ul>
         </div>
       </nav>
@@ -52,84 +52,71 @@
         <div class="col-lg-3">
           <h4 class="my-4">Resources</h4>
           <div class="list-group">
-            <a href="notes.html" class="list-group-item">Notes</a>
-            <a href="projects.html" class="list-group-item">Projects</a>
-            <a href="literature.html" class="list-group-item">Literature</a>
-            <a href="https://www.cocalc.com" class="list-group-item">CoCalc</a>
+              <a href="readings.html" class="list-group-item">Readings</a>
+              <a href="references.html" class="list-group-item">References</a>
+              <a href="https://www.cryptool.org" class="list-group-item">CrypTool</a>
           </div>
         </div>
 
         <div class="col-lg-9">
-            <h1 class="mt-5 text-center">Linear Algebra</h1>
+            <h1 class="mt-5 text-center">Readings in Cryptography</h1>
             <p>
-                Linear Algebra has become a staple of the undergraduate curriculum. It's
-                importance has been ever increasing with applications in optimization and
-                computation. It's prevalence in both theoretical and applied mathematics
-                means that a linear algebra course can be taught from many differnt directions.
-                This has given me the opportunity to craft the course towards the student's
-                interests. To the left, you will find some of the resources to the course.
-                Below you will find some of my thoughts on the points-of-view taken, while
-                teaching the course.
+                I've listed some articles that I have students read. They are
+                meant to give a point-of-view that is absent from textbooks and
+                formal academic work.
             </p>
+
             <p>
-                <b>Seminar Style:</b> The course is modeled after what one might experience
-                when taking an undergraduate math seminar. We meet three days a week, homework
-                is due every two or three weeks, and we discuss our topic for the day during
-                class meetings. If you were to visit us, you would see students working
-                problems at the board 85% of the time. Having students acitvely engaged,
-                in the classroom, gives them an opportunity to show what they know, work
-                through items that they may not fully grasp, and have practice communicating
-                mathematical ideas. As the course is a year long, I have broken it into three
-                parts:
-                <ol>
-                    <li> Developing the basic skills needed to work with linear algebra.</li>
-                    <li> Building the toolbox with advanced concepts.</li>
-                    <li> Straight Seminar with a creative component. </li>
-                </ol>
-                Part one takes roughly 15 weeks, and covers the material one would find in a
-                typical undergraduate linear algebra course. We work through the better part
-                of Gilbert Strang's <i>Introduction to Linear Algebra</i>. We have
-                homework, a midterm exam, and a final exam. Part two is about building the tools
-                students need to complete a project at the end of the course. We
-                do this through reading a paper and introducing students to topics that
-                they maybe interested in pursuing during the end of the course.
+                <b>Theory vs. Practical Implementation:</b> In every area of study
+                there are tensions between the theoretical and the implementation
+                of the theory. Discussing these tensions can open conversations
+                around respecting another's work, that engaging in comparison is
+                often unproductive, and how much the "practical" feeds the "theoretical"
+                and the reverse.
+
+                <ul>
+                    <li> Neal Koblitz wrote an article entitled <i>The Uneasy Relationship
+                        Between Mathematics and Cryptography</i>. It can be found here
+                        <a href="http://www.ams.org/notices/200708/tx070800972p.pdf"> The Uneasy Relationship Between Mathematics and Cryptography</a>
+                        It caused quite a stir. Both mathematicians and computer scientists
+                        took offense to the content of the article. The responses to
+                        Koblitz's article: <a href="http://www.ams.org/notices/200711/tx071101454p.pdf">Letters to the Editor</a> - AMS Notices Vol.54 No. 11
+                    </li>
+                </ul>
             </p>
+
             <p>
-                <b>What is Linear Algebra?</b> Any attempt to answer this question will inevitably
-                leave out someone's favorite application. It's study began with the desire to
-                solve systems of linear equations. This dates back to the work of
-                Leibniz, Cramer, and Gauss in the 18th century. It was through
-                Sylvester, in the 19th century, that the idea of a matrix became formalized
-                and the notion of a linear may first came up. Grassman introduced
-                the notion of a Grassman algebra, which really wasn't appreciated at the time.
-                Through the works of Cayley and Frobenius, the subject found firm footing,
-                in the realm of matrix equations and the early notions of representation theory.
-                The idea of dimension we find intuitive is that used in linear algebra.
+                <b>Ethical Hacking and the White Hats:</b>
+                I'm in the process of collecting some articles regarding ethical hacking.
+                This is a place where cryptography, ethics, business, and philosophy
+                intersect. These types of articles often make for good discussion and debate. Here are
+                a few articles I've had students take a look at:
+                <ul>
+                    <li><a href="http://www.zdnet.com/so-you-want-to-be-an-ethical-hacker-1339334749/">So You Want to be an Ethical Hacker? </a> - ZDNet, March 2012 </li>
+                    <li><a href="http://www.reuters.com/article/2011/06/17/us-cybersecurity-banks-idUSTRE75G5VR20110617">Analysis: Banks seek cybershelter with "ethical hackers" </a> - Reuters, June 2011</li>
+                    <li><a href="http://www.forbes.com/sites/parmyolson/2012/07/31/exploding-the-myth-of-the-ethical-hacker/">Exploding the Myth of the 'Ethical Hacker' </a> - Forbes, July 2012</li>
+                </ul>
             </p>
+
             <p>
-                As the 20th century dawned, there was a realization that the ideas
-                of linearity could be found in other spaces as well. Lebesgue introduced
-                the concept of measure, revolutionary in itself, and eventually spawned
-                the study of function spaces. Function spaces are examples of infinite-dimensional
-                vector spaces. Two special cases are that of the Banach space and the Hilber space.
-                The Hilbert space makes its appearance in Quantum mechanics. As one
-                would expect, having infinite dimensions can make life quite complicated.
+                <b>Satellite Phone Encryption Cracked:</b>
+                An article and the release on the reverse engineering of the algorithms
+                used in some satellite phones.
+                <ul>
+                    <li><a href="http://www.telegraph.co.uk/technology/news/9058529/Satellite-phone-encryption-cracked.html"> Satellite Phones Cracked </a> - The Telegraph, 2012 </li>
+                    <li><a href="https://ieeexplore.ieee.org/document/6234409/all-figures">Don't Trust Satellite Phones</a> - IEEE Symposium on Security, 2012</li>
+                </ul>
             </p>
+
             <p>
-                <b>Applications:</b> It is through the growth of computers and
-                computational mathematics that linear algebra has found a home
-                in applied mathematics. There is a whole topic of <i>Numerical Linear
-                Algebra</i>, where one can study the nuances and difficulties of computing
-                the objects in linear algebra. Such items include, but certainly
-                aren't limited to: LU, QR, and SVD decompositions, the eigenvalue problem,
-                discrete Fourier transform, and wavelets. Each of these items holds
-                an important place in applied mathematics. For example, the Fast
-                Fourier Transform makes its appearance in signal processing,
-                the Discrete Fourier Transform in image compressions, and solutions
-                to partial differential equations. For students who are interested
-                in computer programming and computations, these topics give them the
-                opportunity to learn linear algebra, implement algorithms, and have
-                concrete results for their work.
+                <b>Quantum Cryptography:</b>
+                Here are a handful of articles regarding quantum cryptography. The last
+                link describes how they were able to blind detectors with lasers.
+                <ul>
+                    <li><a href="http://www.nature.com/news/2011/111025/full/news.2011.611.html">Quantum Security Loophole</a> - Nature, October 2011</li>
+                    <li><a href="http://www.nature.com/news/2010/100829/full/news.2010.436.html">Hackers Blind Quantum Cryptographers</a> - Nature, August 2010</li>
+                    <li><a href="http://www.vad1.com/lab/hacking-commercial-quantum-cryptography-2010/">Quantum Hacking Lab</a></li>
+                </ul>
             </p>
         </div>
     </div>

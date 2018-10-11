@@ -39,7 +39,7 @@
           <ul class="breadcrumb">
               <li><a href="../../index.html"> Home </a></li>
               <li><a href="../curriculum1.html"> Math Courses </a></li>
-              <li class="active">Linear Algebra</li>
+              <li class="active">Cryptography</li>
           </ul>
         </div>
       </nav>
@@ -52,84 +52,148 @@
         <div class="col-lg-3">
           <h4 class="my-4">Resources</h4>
           <div class="list-group">
-            <a href="notes.html" class="list-group-item">Notes</a>
-            <a href="projects.html" class="list-group-item">Projects</a>
-            <a href="literature.html" class="list-group-item">Literature</a>
-            <a href="https://www.cocalc.com" class="list-group-item">CoCalc</a>
+              <a href="readings.html" class="list-group-item">Readings</a>
+              <a href="references.html" class="list-group-item">References</a>
+              <a href="https://www.cryptool.org" class="list-group-item">CrypTool</a>
           </div>
         </div>
 
         <div class="col-lg-9">
-            <h1 class="mt-5 text-center">Linear Algebra</h1>
+            <h1 class="mt-5 text-center">Cryptography References</h1>
             <p>
-                Linear Algebra has become a staple of the undergraduate curriculum. It's
-                importance has been ever increasing with applications in optimization and
-                computation. It's prevalence in both theoretical and applied mathematics
-                means that a linear algebra course can be taught from many differnt directions.
-                This has given me the opportunity to craft the course towards the student's
-                interests. To the left, you will find some of the resources to the course.
-                Below you will find some of my thoughts on the points-of-view taken, while
-                teaching the course.
+                The following is a list of references that I have found useful. It is
+                by no means exhaustive. The books are listed first and then the
+                journal articles. They range from the expository to the very mathematical.
             </p>
+
             <p>
-                <b>Seminar Style:</b> The course is modeled after what one might experience
-                when taking an undergraduate math seminar. We meet three days a week, homework
-                is due every two or three weeks, and we discuss our topic for the day during
-                class meetings. If you were to visit us, you would see students working
-                problems at the board 85% of the time. Having students acitvely engaged,
-                in the classroom, gives them an opportunity to show what they know, work
-                through items that they may not fully grasp, and have practice communicating
-                mathematical ideas. As the course is a year long, I have broken it into three
-                parts:
+                <b>Cryptology Books:</b>
                 <ol>
-                    <li> Developing the basic skills needed to work with linear algebra.</li>
-                    <li> Building the toolbox with advanced concepts.</li>
-                    <li> Straight Seminar with a creative component. </li>
+                    <li> Bauer, Friedrich. <i>Decrypted Secrets: Methods and Maxims of
+                        Cryptology</i>. Fourth Edition. Springer, 2006. </li>
+                    <li> Flanner, Sarah, with David Flannery. <i>In Code: A Mathematical
+                        Journey</i>. Chapel Hill, NC: Algonquin Books of Chapel Hill, 2002. </li>
+                    <li> Gaines, Hellen F. <i>Cryptanalysis: a study of ciphers and their solutions</i>.
+                        Dover, 1989.</li>
+                    <li> Lewand, Robert F. <i>Cryptological Mathematics</i>. Mathematical
+                        Association of America, 2009.</li>
+                    <li> Schneier, Bruce. <i>Applied Cryptography</i>. Second Edition.
+                        John Wiley &amp; Sons, 1996.</li>
+                    <li> Sinkov, Abraham. <i>Elementary Cryptanalysis</i>. Second Edition.
+                        Mathematical Association of America, 2009.</li>
+                    <li> Singh, Simon. <i> The Code Book: The Science of Secrecy from
+                        Ancient Egypt to Quantum Cryptography</i>. New York: Anchor Books, 2000. </li>
+                    <li> Van Assche, Giles. <i>Quantum Cryptography and Secret-Key Distillation</i>.
+                        Cambridge UP, 2006.
                 </ol>
-                Part one takes roughly 15 weeks, and covers the material one would find in a
-                typical undergraduate linear algebra course. We work through the better part
-                of Gilbert Strang's <i>Introduction to Linear Algebra</i>. We have
-                homework, a midterm exam, and a final exam. Part two is about building the tools
-                students need to complete a project at the end of the course. We
-                do this through reading a paper and introducing students to topics that
-                they maybe interested in pursuing during the end of the course.
             </p>
+
             <p>
-                <b>What is Linear Algebra?</b> Any attempt to answer this question will inevitably
-                leave out someone's favorite application. It's study began with the desire to
-                solve systems of linear equations. This dates back to the work of
-                Leibniz, Cramer, and Gauss in the 18th century. It was through
-                Sylvester, in the 19th century, that the idea of a matrix became formalized
-                and the notion of a linear may first came up. Grassman introduced
-                the notion of a Grassman algebra, which really wasn't appreciated at the time.
-                Through the works of Cayley and Frobenius, the subject found firm footing,
-                in the realm of matrix equations and the early notions of representation theory.
-                The idea of dimension we find intuitive is that used in linear algebra.
+                <b>Mathematical Cryptography &amp; Number Theory References:</b>
+                <ol>
+                    <li> Hoffstein, J., Pipher, J., Silverman, J.H. <i> An Introduction
+                        to Mathematical Cryptography</i>. Springer, 2009.</li>
+                    <li> Koblitz, Neal. <i>A Course in Number Theory and Cryptography</i>.
+                        2nd Edition. New York: Springer-Verlag, 1994.</li>
+                    <li> Rosen, Kenneth H. <i>Elementary Number Theory and its appications</i>.
+                        Fifth Edition. Boston: Pearson Addison-Wesley, 2005.</li>
+                </ol>
             </p>
+
             <p>
-                As the 20th century dawned, there was a realization that the ideas
-                of linearity could be found in other spaces as well. Lebesgue introduced
-                the concept of measure, revolutionary in itself, and eventually spawned
-                the study of function spaces. Function spaces are examples of infinite-dimensional
-                vector spaces. Two special cases are that of the Banach space and the Hilber space.
-                The Hilbert space makes its appearance in Quantum mechanics. As one
-                would expect, having infinite dimensions can make life quite complicated.
+                <b>Seminal Journal Articles:</b>
+                The articles listed in this section each mark a major advance
+                in 20th century cryptography. I have also listed the original
+                papers developing the Hill Cipher in this section.
+                <ol>
+                    <li>Diffie, W., and M.E. Hellman. <i>New Directions in Cryptography</i>.
+                        <i>IEEE Transactions on Information Theory</i> 22, no. 6(November 1976): 644-654</li>
+                    <li> Elgamal, T. <i>A Public Key Cryptosystem and a Signature Scheme
+                        Based on Discrete Logarithms</i>. <i>IEEE Transactions on Information Theory</i> 31,
+                        no. 4(July 1985): 469-472</li>
+                    <li> Hellman, M.E. <i>An Overview of Public Key Cryptograhpy</i>. <i>
+                        IEEE Communications Magazine</i>, 50th Anniversary Commemorative
+                        Issue(May 2002): 42-29</li>
+                    <li> Hill, L.S. <i>Concerning Certain Linear Transformation Apparatus
+                        of Cryptography</i>. <i>The American Mathematical Monthly</i>
+                        (Mathematical Association of America), no.3(March 1931): 135-154</li>
+                    <li> Hill, L.S. <i>Cryptography in an Algebraic Alphabet</i>. <i>The American
+                        Mathematical Monthly</i> (Mathematical Association of America)
+                        65, no. 6(June-July 1929): 306-312 </li>
+                    <li> Levine, Jack. <i>Variable Matrix Substitution in Algebraic Cryptography</i>.
+                        <i>The American Matheamtical Monthly</i> (Mathematial Association of America)
+                        65, no. 3(March 1938): 170-179</li>
+                    <li> Merkle, R.C., and M.E. Hellman. <i>Hiding Information and Signatures
+                        in Trapdoor Knapsacks</i>. <i>IEEE Transactions on Information Theory</i>.
+                        24, no. 5 (September 1978): 525-530</li>
+                    <li> Rivest, R.C., A. Shamir, and L. Adleman. <i>A Method for Obtaining
+                        Digital Signatures and Public-Key Cryptostystems</i>. <i> Communications
+                        of the ACM</i> 21, no. 2 (February 1978): 120 - 126.
+                </ol>
             </p>
+
             <p>
-                <b>Applications:</b> It is through the growth of computers and
-                computational mathematics that linear algebra has found a home
-                in applied mathematics. There is a whole topic of <i>Numerical Linear
-                Algebra</i>, where one can study the nuances and difficulties of computing
-                the objects in linear algebra. Such items include, but certainly
-                aren't limited to: LU, QR, and SVD decompositions, the eigenvalue problem,
-                discrete Fourier transform, and wavelets. Each of these items holds
-                an important place in applied mathematics. For example, the Fast
-                Fourier Transform makes its appearance in signal processing,
-                the Discrete Fourier Transform in image compressions, and solutions
-                to partial differential equations. For students who are interested
-                in computer programming and computations, these topics give them the
-                opportunity to learn linear algebra, implement algorithms, and have
-                concrete results for their work.
+                <b>Expository Journal Articles:</b>
+                The articles in this section are all non-technical in nature. They
+                can be read by anyone intersted in obtaining a background in Cryptology.
+                The Blake-Wilson paper is an examination of the interdisciplinary nature
+                of the subject. The Diffie-Hellman paper is an overview of classical
+                cryptography through early digital methods and contains an extensive
+                bibliography. The Koblitz-Menzes paper is a reveiw of modern digital
+                cryptography, and they cover topics such as RSA, Elliptic Curves, and Braid Groups.
+                <ol>
+                    <li>Blake-Wilson, S. <i>Information Security, Mathematics, and Public-Key
+                        Cryptography</i>. <i>Designs, Codes, and Cryptography</i>
+                        (Kluwer Academic Publishers) 19(2000): 77-99. </li>
+                    <li>Diffie, W., and M.E. Hellman. <i>Privacy and Authentication: An
+                        Introduction to Cryptography</i>. <i>Proceedings of the IEEE</i>
+                        67, no. 3 (March 1979): 397 - 427</li>
+                    <li>Koblitz, N., and A.J. Menezes. <i>A Survey of Public-Key Cryptosystems</i>.
+                        <i>SIAM Review</i> (Society for Industrial and Appied Mathematics)
+                        46, no. 4 (December 2004): 599-634.
+                </ol>
+            </p>
+
+            <p>
+                <b>Journal Articles on RSA:</b>
+                <ol>
+                    <li>Boneh, D. <i>Twenty Years of Attacks on the RSA Cryptosystem</i>.
+                        <i>Notices of the AMS</i> 46, no. 2(February 1999): 203-213</li>
+                    <li> Brincat, K. <i>On the Use of RSA as a Secret Key Cryptosystem</i>.
+                        Designs, Codes and Cryptography</i>(Kluwer Academic Publishers),
+                        2001: 317-328</li>
+                    <li>Shamir, A. <i>How to Share a Secret</i>. <i> Communications of the ACM</i>
+                        22, no. 11 (November 1979): 612-613</li>
+                </ol>
+            </p>
+
+            <p>
+                <b>Journal Articles on Knapsack Ciphers:</b>
+                <ol>
+                    <li>Odlyzko, A. <i>The Rise and Fall of Knapsack Cryptosystems</i>. in
+                        Cryptology and Computational Number Theory, <i>Proceedings Symposia
+                        Applied Mathematics</i>. Providence: AMS, 1990. 75-88.</li>
+                </ol>
+            </p>
+
+            <p>
+                <b>Mathematical Journal Articles:</b>
+                These articles are heavy on the mathematics. A background in abstract algebra
+                and number theory is required to understand them. In particular, one should be
+                familiar with fields of characteristic <i>p</i>. These are each well-known
+                articles in mathematical cryptology.
+                <ol>
+                    <li>Blomer, J, and A. May. <i>A Generalized Wiener Attack on RSA</i>.
+                        <i>In PKC 2004</i>, LNCS 2947, edited by F. Bao and et al., 1-13. 2004. </li>
+                    <li>Nguyen, P.Q., J. Stern. <i>The Two Faces of Lattices in Cryptology</i> in <i>
+                        CaLC 2001</i>, LNCS 2146, edited by J.H. Silverman, 146-180. Berlin-Heidelberg:
+                        Springer-Verlag, 2001.</li>
+                    <li>Pohlig, S., and M.E. Hellman. <i>An Improved Algorithm for Computing Logarithms
+                        over GF(p) and its Cryptographyic Significance</i>. <i>IEEE Transactions on
+                        Information Theory</i> 24, no. 1 (January 1978): 106-110.</li>
+                    <li> Wiener, M.J. <i>Cryptanalysis of Short RSA Secret Exponents</i>. <i>IEEE
+                        Transactions on Information Theory</i> 36, no. 3 (May 1990): 553-558.</li>
+                </ol>
             </p>
         </div>
     </div>
